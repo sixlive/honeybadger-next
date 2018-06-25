@@ -64,7 +64,7 @@ class Request
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     private function httpRequest() : bool
     {

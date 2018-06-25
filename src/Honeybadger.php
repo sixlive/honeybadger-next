@@ -15,12 +15,12 @@ class Honeybadger
     use Newable;
 
     /**
-     * SDK Version
+     * SDK Version.
      */
     const VERSION = '0.5.0';
 
     /**
-     * Honeybadger API URL
+     * Honeybadger API URL.
      */
     const API_URL = 'https://api.honeybadger.io/v1/';
 
@@ -69,7 +69,6 @@ class Honeybadger
         $notification = (new ExceptionNotification($this->config, $this->context))
             ->make($throwable, $request);
 
-
         $this->client->notification($notification);
     }
 
@@ -99,8 +98,8 @@ class Honeybadger
     }
 
     /**
-     * @param  integer|string  $key
-     * @param  integer|string  $value
+     * @param  int|string  $key
+     * @param  int|string  $value
      * @return void
      */
     public function context($key, $value) : void
@@ -124,7 +123,7 @@ class Honeybadger
 
     /**
      * @param  \Throwable  $throwable
-     * @return boolean
+     * @return bool
      */
     private function excludedException(Throwable $throwable) : bool
     {

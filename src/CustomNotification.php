@@ -6,7 +6,6 @@ use Honeybadger\Support\Repository;
 
 class CustomNotification
 {
-
     /**
      * @var \Honeybadger\Config
      */

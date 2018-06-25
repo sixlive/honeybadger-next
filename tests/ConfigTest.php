@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Honeybadger\Tests;
 
 use Honeybadger\Config;

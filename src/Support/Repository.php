@@ -45,8 +45,8 @@ class Repository implements \ArrayAccess
     }
 
     /**
-     * @param  string|integer $offset
-     * @return boolean
+     * @param  string|int $offset
+     * @return bool
      */
     public function offsetExists($offset) : bool
     {
@@ -54,7 +54,7 @@ class Repository implements \ArrayAccess
     }
 
     /**
-     * @param  integer|string  $offset
+     * @param  int|string  $offset
      * @return void
      */
     public function offsetGet($offset)
@@ -63,7 +63,7 @@ class Repository implements \ArrayAccess
     }
 
     /**
-     * @param  integer|string  $offset
+     * @param  int|string  $offset
      * @param  mixed  $value
      * @return void
      */
@@ -73,7 +73,7 @@ class Repository implements \ArrayAccess
     }
 
     /**
-     * @param  integer|string  $offset
+     * @param  int|string  $offset
      * @return void
      */
     public function offsetUnset($offset) : void

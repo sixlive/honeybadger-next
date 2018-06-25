@@ -80,7 +80,7 @@ class Environment
      * @param  array  $keysToInclude
      * @return \Honeybadger\Environment
      */
-    public function include(array $keysToInclude) : Environment
+    public function include(array $keysToInclude) : self
     {
         $this->includeKeys = array_merge($this->includeKeys, $keysToInclude);
 
@@ -99,7 +99,7 @@ class Environment
 
     /**
      * @param  string  $key
-     * @return boolean
+     * @return bool
      */
     private function whitelistKey(string $key) : bool
     {
@@ -108,7 +108,7 @@ class Environment
 
     /**
      * @param  string  $key
-     * @return boolean
+     * @return bool
      */
     private function httpKey(string $key) : bool
     {
@@ -117,10 +117,10 @@ class Environment
 
     /**
      * @param  string  $key
-     * @return boolean
+     * @return bool
      */
     private function autoIncludeKey(string $key) : bool
     {
-        return ($this->whitelistKey($key) || $this->httpKey($key));
+        return $this->whitelistKey($key) || $this->httpKey($key);
     }
 }

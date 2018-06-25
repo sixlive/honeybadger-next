@@ -8,7 +8,6 @@ use ReflectionException;
 
 class BacktraceFactory
 {
-
     /**
      * @var \Throwable
      */

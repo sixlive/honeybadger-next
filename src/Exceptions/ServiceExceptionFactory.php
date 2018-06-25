@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ServiceExceptionFactory
 {
-
     /**
      * @var \Psr\Http\Message\ResponseInterface
      */

@@ -21,10 +21,10 @@ class ErrorHandler extends Handler implements HandlerContract
     }
 
     /**
-     * @param  integer  $code
+     * @param  int  $code
      * @param  string  $error
      * @param  string  $file
-     * @param  integer  $line
+     * @param  int  $line
      * @return void
      *
      * @throws \Honeyhadger\Exceptions\ServiceException

@@ -6,7 +6,6 @@ use Honeybadger\Honeybadger;
 
 abstract class Handler
 {
-
     /**
      * @var \Honeybadger\Honeybadger
      */

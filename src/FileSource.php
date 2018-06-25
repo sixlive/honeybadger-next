@@ -6,26 +6,25 @@ use SplFileObject;
 
 class FileSource
 {
-
     /**
      * @var string
      */
     protected $filename;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $lineNumber;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $radius;
 
     /**
      * @param  string  $filename
-     * @param  integer  $lineNumber
-     * @param  integer  $radius
+     * @param  int  $lineNumber
+     * @param  int  $radius
      */
     public function __construct(string $filename, int $lineNumber, int $radius = 4)
     {
@@ -59,11 +58,11 @@ class FileSource
     {
         $trimmed = trim($line, "\n\r\0\x0B");
 
-        return preg_replace(['/\s*$/D', '/\t/',], ['', '    ',], $trimmed);
+        return preg_replace(['/\s*$/D', '/\t/'], ['', '    '], $trimmed);
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     private function canReadFile() : bool
     {
@@ -97,7 +96,7 @@ class FileSource
     }
 
     /**
-     * @return integer
+     * @return int
      */
     private function startingLineNumber() : int
     {

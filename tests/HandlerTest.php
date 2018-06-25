@@ -40,7 +40,7 @@ class HandlerTest extends TestCase
         $handlerFixture = new HandlerFixture;
         set_error_handler([$handlerFixture, 'errorHandler']);
 
-        $mock =  $this->createMock(Honeybadger::class);
+        $mock = $this->createMock(Honeybadger::class);
         $mock->expects($this->once())->method('notify');
 
         $handler = new ErrorHandler($mock);

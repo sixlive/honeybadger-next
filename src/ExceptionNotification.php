@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Request as FoundationRequest;
 
 class ExceptionNotification
 {
-
     /**
      * @var \Honeybadger\Config
      */

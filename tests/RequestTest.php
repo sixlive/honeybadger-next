@@ -37,10 +37,10 @@ class RequestTest extends TestCase
         $request->overrideGlobals();
 
         $this->assertArraySubset([
-            'method' => 'POST' ,
+            'method' => 'POST',
             'query' => [
-                'query1' => 'foo' ,
-                'query2' => 'bar' ,
+                'query1' => 'foo',
+                'query2' => 'bar',
             ],
         ], (new Request($request))->params());
     }
@@ -133,10 +133,10 @@ class RequestTest extends TestCase
         $request->overrideGlobals();
 
         $this->assertEquals([
-            'method' => 'GET' ,
+            'method' => 'GET',
             'query' => [
-                'query1' => 'foo' ,
-                'query2' => '[FILTERED]' ,
+                'query1' => 'foo',
+                'query2' => '[FILTERED]',
             ],
             'data' => [],
         ], (new Request($request))->filterKeys(['query2'])->params());
