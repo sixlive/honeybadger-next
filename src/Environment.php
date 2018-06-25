@@ -50,6 +50,11 @@ class Environment
     protected $includeKeys = [];
 
     /**
+     * @var array
+     */
+    protected $server = [];
+
+    /**
      * @param  array  $server
      * @param  array  $env
      */

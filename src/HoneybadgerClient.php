@@ -2,6 +2,7 @@
 
 namespace Honeybadger;
 
+use Exception;
 use GuzzleHttp\Client;
 use Honeybadger\Exceptions\ServiceException;
 use Symfony\Component\HttpFoundation\Response;

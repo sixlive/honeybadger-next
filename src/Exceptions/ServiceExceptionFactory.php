@@ -3,21 +3,21 @@
 namespace Honeybadger\Exceptions;
 
 use Exception;
+use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\HttpFoundation\Response;
-use GuzzleHttp\Psr7\Response as GuzzleResponse;
 
 class ServiceExceptionFactory
 {
 
     /**
-     * @var \GuzzleHttp\Psr7\Response
+     * @var \Psr\Http\Message\ResponseInterface
      */
     protected $response;
 
     /**
-     * @param  \GuzzleHttp\Psr7\Response  $response
+     * @param  \Psr\Http\Message\ResponseInterface  $response
      */
-    public function __construct(GuzzleResponse $response)
+    public function __construct(ResponseInterface $response)
     {
         $this->response = $response;
     }

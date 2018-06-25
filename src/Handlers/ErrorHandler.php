@@ -8,7 +8,7 @@ use Honeybadger\Contracts\Handler as HandlerContract;
 class ErrorHandler extends Handler implements HandlerContract
 {
     /**
-     * @var \callable
+     * @var callable
      */
     protected $previousHandler;
 

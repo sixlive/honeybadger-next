@@ -30,7 +30,7 @@ class ExceptionNotification
     protected $backtrace;
 
     /**
-     * @var \Symfony\Component\HttpFoundation\Request
+     * @var \Honeybadger\Request
      */
     protected $request;
 

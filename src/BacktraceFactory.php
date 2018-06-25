@@ -5,7 +5,6 @@ namespace Honeybadger;
 use Throwable;
 use ReflectionClass;
 use ReflectionException;
-use Honeybadger\Support\Arr;
 
 class BacktraceFactory
 {
@@ -85,7 +84,7 @@ class BacktraceFactory
      */
     private function formatBacktrace(array $backtrace) : array
     {
-        return Arr::mapWithKeys($backtrace, function ($frame, $i) use ($backtrace) {
+        return array_map(function ($frame) use ($backtrace) {
             if (! array_key_exists('file', $frame)) {
                 $context = $this->contextWithoutFile($frame);
             } else {
@@ -95,7 +94,7 @@ class BacktraceFactory
             return array_merge($context, [
                 'method' => $frame['function'] ?? null,
             ]);
-        });
+        }, $backtrace);
     }
 
     /**

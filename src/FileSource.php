@@ -13,7 +13,7 @@ class FileSource
     protected $filename;
 
     /**
-     * @var string
+     * @var integer
      */
     protected $lineNumber;
 
@@ -45,7 +45,7 @@ class FileSource
 
         return array_slice(
             $this->fileLines($this->readFile()),
-            $this->startingLineNumber($this->lineNumber, $this->radius),
+            $this->startingLineNumber(),
             ($this->radius * 2) + 1,
             $preserveKeys = true
         );
