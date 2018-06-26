@@ -1,7 +1,7 @@
 # Honeybadger PHP library
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/honeybadger-io/honeybadger-php.svg?style=flat-square)](https://packagist.org/packages/honeybadger-io/honeybadger-php)
-[![Build Status](https://img.shields.io/travis/sixlive/honeybadger-next/master.svg?style=flat-square)](https://travis-ci.org/honeybadger-io/honeybadger-php)
+[![Build Status](https://img.shields.io/travis/sixlive/honeybadger-next/master.svg?style=flat-square)](https://travis-ci.org/sixlive/honeybadger-next)
 [![Quality Score](https://img.shields.io/scrutinizer/g/sixlive/honeybadger-next.svg?style=flat-square)](https://scrutinizer-ci.com/g/sixlive/honeybadger-next)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5dfccab91329acaa9444/maintainability)](https://codeclimate.com/github/sixlive/honeybadger-next/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5dfccab91329acaa9444/test_coverage)](https://codeclimate.com/github/honeybadger-io/honeybadger-php/test_coverage)
